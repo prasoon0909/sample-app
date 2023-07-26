@@ -10,6 +10,8 @@ npm install
 
 Open `service.ts` and fill the account details:
 
-### Step 3:
+### Step 3: Run the index.ts
 
-Run the `npx ts-node index.ts`
+```bash
+npx ts-node index.ts
+```
