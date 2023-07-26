@@ -12,4 +12,4 @@ Open `service.ts` and fill the account details:
 
 ### Step 3:
 
-Run the `ts-node index.js`
+Run the `npx ts-node index.ts`

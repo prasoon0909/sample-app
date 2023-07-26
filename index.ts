@@ -1,5 +1,5 @@
-import { ImagekitService } from "./service"
 import path from "path";
+import { ImagekitService } from "./service"
 
 const FILE_PATH = path.resolve(__dirname, "./test_image.jpg")
 
