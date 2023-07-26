@@ -8,15 +8,7 @@ npm install
 
 ### Step 2: Enter account details
 
-Open `index.js` and fill the account details:
-
-```js
-const CONFIG_OPTIONS = {
-  publicKey: "your_public_api_key",
-  privateKey: "your_private_api_key",
-  urlEndpoint: "https://ik.imagekit.io/your_imagekit_id/",
-};
-```
+Open `service.ts` and fill the account details:
 
 ### Step 3:
 
