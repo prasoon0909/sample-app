@@ -15,3 +15,5 @@ Open `service.ts` and fill the account details:
 ```bash
 npx ts-node index.ts
 ```
+
+### Step 4: verify that the instance of service class is successfully created
