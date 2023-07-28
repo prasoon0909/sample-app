@@ -9,8 +9,8 @@ export class ImagekitService {
 
   get client() {
     return new ImageKitJs({
-      publicKey: 'public_3dyqiwVutyh20C/+Y/NPQKjMn8U=',
-      urlEndpoint: 'https://ik.imagekit.io/hzd8q2tzb',
+      publicKey: 'public_******',
+      urlEndpoint: 'https://ik.imagekit.io/******',
     });
   }
 
