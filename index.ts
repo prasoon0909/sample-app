@@ -1,24 +1,30 @@
-import path from "path";
-import { ImagekitService } from "./service"
+import { ImagekitService } from './service';
 
-const FILE_PATH = path.resolve(__dirname, "./test_image.jpg")
+const IMAGE_URL =
+  'https://ik.imagekit.io/hzd8q2tzb/1_pgOk5R30LWFLn81DQqzN-w.webp?updatedAt=1690529031460';
 
 const testingFunction = async () => {
-    try {
-        console.log("🚀 ~ file: main.ts:5 ~ FILE_PATH:", FILE_PATH)
-        const service = new ImagekitService();
-        const imageUrl = service.client.url({
-            path: FILE_PATH,
-            transformation: [{
-                "height": "300",
-                "width": "400"
-            }]
-        })
-        console.log("🚀 ~ file: main.ts:22 ~ testingFunction ~ imageUrl:", imageUrl)
-        
-    } catch (error: any) {
-        console.log('Error encountered :- ', error.message)
-    }
-}
+  try {
+    const service = new ImagekitService();
+    console.log('\n SDK initialised 🚀 =====> \n', service);
+
+    const imageUrl = service.client.url({
+      src: IMAGE_URL,
+      transformation: [
+        {
+          height: '300',
+          width: '400',
+        },
+        {
+          rotation: '90',
+        },
+      ],
+    });
+
+    console.log('\n URL Generated 🚀 =====> \n', imageUrl);
+  } catch (error: any) {
+    console.log('Error encountered :- ', error.message);
+  }
+};
 
 testingFunction();

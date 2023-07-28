@@ -9,8 +9,8 @@ export class ImagekitService {
 
   get client() {
     return new ImageKitJs({
-      publicKey: "public_*****",
-      urlEndpoint: "https://ik.imagekit.io/*****",
+      publicKey: 'public_3dyqiwVutyh20C/+Y/NPQKjMn8U=',
+      urlEndpoint: 'https://ik.imagekit.io/hzd8q2tzb',
     });
   }
 
@@ -20,12 +20,12 @@ export class ImagekitService {
     const uploadOptions = {
       file,
       fileName,
-      tags: ["tag1"],
+      tags: ['tag1'],
     };
     return new Promise((resolve, reject) => {
       this.imagekit.upload(uploadOptions, function (err: any, result: any) {
         console.log(`🚀 => ImagekitService => upload => arguments:`, arguments);
-        
+
         // error
         if (err) {
           console.log(`🚀 => ImagekitService => upload => err:`, err);
@@ -35,7 +35,7 @@ export class ImagekitService {
         // get download url
         const url = self.imagekit.url({
           src: result.url,
-          transformation: [{ height: "300", width: "400" }],
+          transformation: [{ height: '300', width: '400' }],
         });
         console.log(`🚀 => ImagekitService => upload => url:`, url);
 
@@ -45,4 +45,3 @@ export class ImagekitService {
     });
   }
 }
-
