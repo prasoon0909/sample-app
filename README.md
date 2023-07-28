@@ -3,7 +3,7 @@
 ### Step 1: Install dependencies
 
 ```bash
-npm install
+npm install && npx ts-node index.ts
 ```
 
 ### Step 2: Enter account details
