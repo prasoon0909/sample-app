@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "type": "commonjs",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +15,11 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.4.5",
     "tslib": "^2.6.1"
+  },
+  "stackblitz": {
+    "startCommand": "npx ts-node index.ts "
   }
 }
