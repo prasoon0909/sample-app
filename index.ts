@@ -1,7 +1,7 @@
 import { ImagekitService } from './service';
 
 const IMAGE_URL =
-  'https://ik.imagekit.io/hzd8q2tzb/1_pgOk5R30LWFLn81DQqzN-w.webp?updatedAt=1690529031460';
+  'https://ik.imagekit.io/hzd8q2tzb/1_pgOk5R30LWFLn81DQqzN-w.webp';
 
 const testingFunction = async () => {
   try {
@@ -17,6 +17,12 @@ const testingFunction = async () => {
         },
         {
           rotation: '90',
+        },
+        {
+          format: 'jpg',
+          progressive: 'true',
+          effectSharpen: '-',
+          effectContrast: '1',
         },
       ],
     });
